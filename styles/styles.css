@@ -16,27 +16,56 @@
 
 
 /*Shared Style*/
-.display-flex{
+body{
+    max-width : 90%;
+    margin: 0 auto;
+    background : black;
+    color : white;
+}
+.display-flex {
     display: flex;
 }
 
-.display-grid{
+.display-grid {
     display: grid;
 }
 
-.primary-color{
-    color : #E6533C;
+.primary-color {
+    color: #E6533C;
 }
 
-body{
-    max-width : 1500px;
-    margin: 0.5rem auto;
+.light-white {
+    color: rgba(255, 255, 255, 0.5);
 }
+
+.banner-description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 40px 0 40px 0;
+}
+
+
+.btn-primary{
+    color : white;
+    background: rgb(230, 83, 60);
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    border : none;
+    margin : 0 10px 0 0;
+}
+
+
 
 /*Nav Styling*/
 .nav-bar{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
     justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
 }
 
 .nav-bar h1{
@@ -72,13 +101,96 @@ body{
     margin : 0 5px;
 }
 
+/*Banner Styling*/
+
+.banner{
+    background: linear-gradient(180.00deg, rgba(119, 119, 119, 0) , rgb(17, 17, 17)100%);
+    text-align: left;
+}
+
+.banner-container{
+    justify-content: center;
+    align-items: center;
+    gap : 167px;
+}
+
+.banner-img{
+    width : calc(100% - 1,4rem);
+}
+
+.banner-title-box{
+    width : 460px;
+}
+
+.banner-title{
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin : 0;
+    line-height: 100%;
+    text-align: left;
+}
+
+.badge1-container{
+    border-radius: 12px;
+    border: none;
+    margin-left: -100px;
+    margin-top: -150px;
+}
+
+.badge2-container{
+    border-radius: 12px;
+    border: none;
+    margin-left: 400px;
+    margin-top : -600px;
+}
+
+
+.dot{
+    background-color : #E6533C;
+    width : 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20rem;
+}
+.badge1,.badge2{
+    gap : 15px;
+    width : 206px;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+    margin : 0;
+    padding: 0;
+}
+
+.badge1-title h1, .badge2-title h1{
+    text-align: left;
+    margin: 5px 0 8px 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.badge1-title p, .badge2-title p{
+    margin-top: 4px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.dwnd-btn{
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    color : white;
+    padding: 16px 40px 16px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 /*Small Device Responsive*/
 @media screen and (max-width : 576px) {
     .nav-anchors{
         display: none;
     }
-    
+
     .hamburger{
         display: block;
     }

@@ -13,3 +13,73 @@
 .miama{
     font-family: 'Miama', sans-serif;
 }
+
+
+/*Shared Style*/
+.display-flex{
+    display: flex;
+}
+
+.display-grid{
+    display: grid;
+}
+
+.primary-color{
+    color : #E6533C;
+}
+
+body{
+    max-width : 1500px;
+    margin: 0.5rem auto;
+}
+
+/*Nav Styling*/
+.nav-bar{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-anchors{
+    border: 1px solid #2b2b2b;
+    border-radius: 2.5rem;
+    text-align: left;
+    padding : 4px 0;
+}
+
+
+.nav-bar ul>li{
+    text-decoration: none;
+    list-style: none;
+    margin : 0 1.4rem;
+    padding-top: 0.55rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+#home{
+    border: 1px solid black;
+    background-color : #E6533C;
+    padding: 8px 20px 8px 20px;
+    text-align: left;
+    border-radius: 46px;
+    margin : 0 5px;
+}
+
+
+/*Small Device Responsive*/
+@media screen and (max-width : 576px) {
+    .nav-anchors{
+        display: none;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+}

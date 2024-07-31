@@ -17,7 +17,7 @@
 
 /*Shared Style*/
 body{
-    max-width : 90%;
+    max-width : 100%;
     margin: 0 auto;
     background : black;
     color : white;
@@ -34,6 +34,10 @@ body{
     color: #E6533C;
 }
 
+.white{
+    color :rgb(250, 250, 249);
+}
+
 .light-white {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -45,6 +49,10 @@ body{
     margin: 40px 0 40px 0;
 }
 
+/* .card-blur{
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+} */
 
 .btn-primary{
     color : white;
@@ -101,92 +109,195 @@ body{
     margin : 0 5px;
 }
 
-/*Banner Styling*/
-
-.banner{
-    background: linear-gradient(180.00deg, rgba(119, 119, 119, 0) , rgb(17, 17, 17)100%);
-    text-align: left;
-}
+/* Banner Styling */
 
 .banner-container{
     justify-content: center;
     align-items: center;
-    gap : 167px;
-}
-
-.banner-img{
-    width : calc(100% - 1,4rem);
+    gap : 170px;
 }
 
 .banner-title-box{
-    width : 460px;
+    max-width : 500px;
+    text-align: left;
 }
 
-.banner-title{
-    font-size: 4.8rem;
+.banner-title {
+    font-size: 4.5rem;
     font-weight: 900;
-    margin : 0;
+    margin: 0;
     line-height: 100%;
     text-align: left;
 }
 
-.badge1-container{
-    border-radius: 12px;
-    border: none;
-    margin-left: -100px;
-    margin-top: -150px;
-}
-
-.badge2-container{
-    border-radius: 12px;
-    border: none;
-    margin-left: 400px;
-    margin-top : -600px;
-}
-
-
-.dot{
-    background-color : #E6533C;
-    width : 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20rem;
-}
-.badge1,.badge2{
-    gap : 15px;
-    width : 206px;
-    height: 96px;
-    justify-content: center;
-    align-items: center;
-    margin : 0;
-    padding: 0;
-}
-
-.badge1-title h1, .badge2-title h1{
-    text-align: left;
-    margin: 5px 0 8px 0;
-    font-size: 1.8rem;
-    font-weight: 900;
-}
-
-.badge1-title p, .badge2-title p{
-    margin-top: 4px;
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-.dwnd-btn{
+.btn-download {
     background: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
-    color : white;
+    color: white;
     padding: 16px 40px 16px 40px;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
+.banner-container img{
+    max-width: 100%;
+}
+
+.img-card{
+    max-width: 500px;
+    padding: 10px;
+    position: relative;
+}
+
+.img-card .badge1{
+    width: 170px;
+    position:absolute;
+    left: -80px;
+    top : 400px;
+    background: transparent;
+    color : white;
+    border: none;
+    text-align: left;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    gap : 8px;
+    justify-content: center;
+    align-items: center;
+    padding : 20px 0px 20px 0px;
+}
+
+.img-card .badge2{
+    width : 150px;
+    position: absolute;
+    left: 245px;
+    top : 150px;
+    text-align: left;
+    color : white;
+    border: none;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    padding : 20px 10px 20px 10px;
+}
+
+.img-card h3 {
+    margin : 3px;
+    font-size: 1.3rem;
+}
+
+.img-card p{
+    margin: 3px;
+    font-size: 0.8rem;
+}
+
+.dot{
+    background: #E6533C;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+/* Habits styling */
+
+.habits{
+    margin-top: 70px;
+}
+
+.habits-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.habits-title h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.habits-title p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.round-card{
+    justify-content: center;
+    text-align: center;
+    gap : 30px;
+    margin-bottom: 50px;
+}
+
+.round-card img{
+    border-radius: 50%;
+}
+
+.round-card h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin : 24px 10px 10px 10px;
+}
+
+.round-card p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+.card1, .card2, .card3, .card4{
+    max-width: 231px;
+}
+
+.running{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222 ;
+    gap : 200px;
+}
+
+.running-title{
+    max-width: 444px;
+}
+
+.running img{
+    width : 100%;
+    height: 370px;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 70% 33%;
+}
+
+.running h1{
+    font-size: 3.0rem;
+    font-weight: 800;
+    margin : 5px 0 5px 0;
+}
+
+.running p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.running button{
+    padding : 16px 80px;
+}
+
+
+
+
+
+
+
 /*Small Device Responsive*/
 @media screen and (max-width : 576px) {
+    
+    /* nav style for mobile large */
     .nav-anchors{
         display: none;
     }
@@ -194,4 +305,63 @@ body{
     .hamburger{
         display: block;
     }
+
+    /* banner style for mobile */
+    .banner-container,.round-card,.running{
+        flex-direction: column;
+    }
+
+    .banner-title-box{
+        margin-left: 5px;
+    }
+
+    .banner-title{
+        max-width: 300px;
+        font-size: 3rem;
+    }
+
+    .banner-description{
+        max-width: 300px;
+    }
+
+    .btn-primary, .btn-download{
+        padding : 12px 25px 12px 25px;
+    }
+
+    #club{
+        display: none;
+    }
+
+    .img-card .badge1{
+        left: 0px;
+    }
+
+    .img-card .badge2{
+        left: 200px;
+        top : 80px;
+    }
+
+    /* habits style for mobile */
+    .round-card{
+        align-items: center;
+    }
+
+   .habits-title h1{
+    font-size: 2rem;
+   }
+
+   .habits-title p{
+    font-size:  0.8rem;
+    padding: 0 60px;
+   }
+
+   .running{
+    margin : 15px;
+    gap : 40px;
+   }
+
+   .running button{
+    padding : 16px 120px;
+   }
+
 }

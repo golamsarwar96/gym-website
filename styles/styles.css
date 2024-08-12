@@ -326,9 +326,111 @@ body{
     object-fit: cover;
 }
 
+/* BMI styling  */
+
+.BMI-container{
+    justify-content: center;
+}
+.BMI-title{
+    max-width: 676px;
+    text-align: left;
+}
+
+.BMI-title h1 {
+    margin: 60px 0 20px 0;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+.BMI-title p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.calculator-container{
+    background: rgb(34, 34, 34);
+}
+
+.calculator{
+    justify-content: center;
+    gap : 200px;
+    padding : 50px;
+}
+
+.table-container h1{
+    margin-bottom: 50px;
+}
+
+/* Table Section */
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 30px 15px 30px;
+
+}
+
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+td{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.form-container{
+    max-width: 577px;
+}
+
+.form-container p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+input{
+    height: 48px;
+    background : rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    margin-top : 10px;
+    text-align: left;
+    padding: 0 90px 0 15px;
+    color: rgba(207, 207, 207, 0.6);
+}
+
+.select-field1 {
+    background :rgba(255, 255, 255, 0.1);
+    color: rgba(207, 207, 207, 0.6);
+    padding : 16px 187px 16px 10px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.select-field2 {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(207, 207, 207, 0.6);
+    padding: 16px 498px 16px 10px;
+    margin-bottom : 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
 
 
-/*Small Device Responsive*/
+
+
+/*Mobile large Responsive*/
 @media screen and (max-width : 576px) {
     
     /* nav style for mobile large */
@@ -338,10 +440,11 @@ body{
 
     .hamburger{
         display: block;
+        border: 1px solid white;
     }
 
     /* banner style for mobile */
-    .banner-container,.round-card,.running{
+    .banner-container,.round-card,.running, .calculator{
         flex-direction: column;
     }
 
@@ -416,5 +519,42 @@ body{
     .training-title p{
         padding : 15px;
         margin: 0;
+    }
+
+    .BMI-title{
+        padding: 20px;
+    }
+
+    .BMI-title h1{
+        font-size: 2.2rem;
+    }
+
+    .BMI-title p{
+        font-size: 0.7rem;
+    }
+
+    .calculator{
+        gap : 90px;
+        padding : 30px;
+    }
+
+    input{
+        padding: 0 0 0 15px;
+        margin-right: 5px;
+    }
+
+    .input1{
+        width : 100px;
+        display: flex;
+    }
+
+    .select-field1{
+        margin : 10px 0 0 0;
+        padding : 0 103px 0 10px;
+    }
+
+    .select-field2{
+        margin-top : 10px;
+        padding : 16px 320px 16px 10px;
     }
 }

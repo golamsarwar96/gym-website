@@ -288,9 +288,43 @@ body{
     padding : 16px 80px;
 }
 
+/* Training Styling */
+.training{
+    max-width : 1060px;
+    margin: 70px auto 0 auto;
+    border-radius: 10px;
+}
 
 
+.training-title {
+    max-width: 1060px;
+    margin: 100px auto 0 auto;
+}
 
+.training-title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+}
+
+.training-title p {
+    max-width : 676px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.grid-gallery{
+    grid-template-columns: 250px 506px 300px;
+    grid-auto-rows: 201.5px;
+    justify-content: center;
+}
+
+.grid-gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -364,4 +398,23 @@ body{
     padding : 16px 120px;
    }
 
+   .grid-gallery{
+        max-width: 400px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .training{
+        margin: 30px auto 0 auto;
+    }
+     
+    .training-title h1{
+        font-size: 2.6rem;
+        padding : 15px;
+        margin: 0;
+    }   
+
+    .training-title p{
+        padding : 15px;
+        margin: 0;
+    }
 }

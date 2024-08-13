@@ -436,13 +436,116 @@ input{
 }
 
 
+/* Team section Styling */
+
+.team-title h1{
+    font-size : 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin : 100px 0 0 0;
+}
+
+.team-title p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.team-card{
+    max-width: 1060px;
+    margin : 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    gap : 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding : 20px;
+    border-radius: 18px;
+}
+
+.team-card1{
+    position: relative;
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../images/trainer1.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-card2{
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trainer2.png);
+    width: 100%;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-card3 {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trainer3.png);
+    width: 100%;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-card4 {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trainer4.png);
+    width: 100%;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+    background-position: center;
+}
+
+.team-card5 {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trainer5.png);
+    width: 100%;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.team-card6 {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/trainer6.png);
+    width: 100%;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.name1{
+    position: absolute;
+    bottom : 20px;
+    left : 20px;
+    margin: 0 0 11px 0;
+    font-weight: 800;
+}
+
+
+
+.trainer1{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-size: 0.8rem;
+}
 
 
 /*Mobile large Responsive*/
 @media screen and (max-width : 576px) {
     
     /* nav style for mobile large */
-    .nav-anchors{
+    .nav-anchors,.team-card5,.team-card6{
         display: none;
     }
 
@@ -563,6 +666,20 @@ input{
     .select-field2{
         margin-top : 10px;
         padding : 16px 193px 16px 10px;
+    }
+
+    .team-card{
+        grid-template-columns: repeat(1,1fr);
+        margin : 0 20px 0 20px;
+    }
+    
+    .team-title{
+        margin : 20px 0 0px 0;
+        padding : 10px;
+    }
+
+    .team-title h1{
+        font-size: 2.2rem;
     }
     
 }

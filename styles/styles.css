@@ -334,6 +334,7 @@ body{
 .BMI-title{
     max-width: 676px;
     text-align: left;
+    margin: 80px 80px;
 }
 
 .BMI-title h1 {
@@ -359,8 +360,15 @@ body{
     padding : 50px;
 }
 
-.table-container h1{
-    margin-bottom: 50px;
+.table-container h1, .form-container h1{
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.form-container p{
+    margin: 0 0 20px 0;
+    font-size: 0.8rem;
 }
 
 /* Table Section */
@@ -420,7 +428,7 @@ input{
 .select-field2 {
     background: rgba(255, 255, 255, 0.1);
     color: rgba(207, 207, 207, 0.6);
-    padding: 16px 498px 16px 10px;
+    padding: 16px 370px 16px 10px;
     margin-bottom : 30px;
     border: none;
     border-radius: 8px;
@@ -440,7 +448,6 @@ input{
 
     .hamburger{
         display: block;
-        border: 1px solid white;
     }
 
     /* banner style for mobile */
@@ -526,7 +533,7 @@ input{
     }
 
     .BMI-title h1{
-        font-size: 2.2rem;
+        font-size: 2.0rem;
     }
 
     .BMI-title p{
@@ -555,6 +562,7 @@ input{
 
     .select-field2{
         margin-top : 10px;
-        padding : 16px 320px 16px 10px;
+        padding : 16px 193px 16px 10px;
     }
+    
 }

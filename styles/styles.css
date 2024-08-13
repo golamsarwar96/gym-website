@@ -288,6 +288,67 @@ body{
     padding : 16px 80px;
 }
 
+/* Unique section */
+.equipment-title{
+    text-align: center;
+}
+
+.equipment-title h1{
+    margin: 100px 0 30px 0;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.equipment-title p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.buy-equipment{
+    max-width: 1060px;
+    margin : 0 auto;
+}
+
+.equipment-card{
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap : 10px;
+    border: 1px solid white;
+}
+
+.equipment-card img{
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.hover1{
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../images/treadmill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.hover2{
+    width: 100%;
+        height: 300px;
+        max-width: 300px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(../images/punching-bag.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid white;
+        border-radius: 18px;
+        cursor: pointer;
+}
+
 /* Training Styling */
 .training{
     max-width : 1060px;
@@ -531,13 +592,59 @@ input{
     font-weight: 800;
 }
 
-
-
 .trainer1{
     position: absolute;
     bottom: 0px;
     left: 20px;
     font-size: 0.8rem;
+}
+
+/* footer Styling */
+
+footer{
+    max-width: 100%;
+    max-height: 100%;
+    margin : 100px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;;
+}
+
+.footer-container{
+    margin : 70px;
+    justify-content: center;
+    gap : 100px;
+}
+
+hr{
+    height: 1px;
+    width : 70%;
+    background-color: rgb(189, 189, 189) ;
+}
+
+.footer-para{
+    font-size: 0.8rem;
+    font-weight: 400;
+    max-width: 443px;
+}
+
+.footer-header{
+    color :rgb(230, 83, 60);
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.anchor{
+    margin-top: 15px;
+}
+
+.copyright{
+    margin-top: 30px;
+    text-align: center;
 }
 
 
@@ -554,7 +661,7 @@ input{
     }
 
     /* banner style for mobile */
-    .banner-container,.round-card,.running, .calculator{
+    .banner-container,.round-card,.running, .calculator, .footer-container{
         flex-direction: column;
     }
 
@@ -632,6 +739,7 @@ input{
     }
 
     .BMI-title{
+        margin : 20px;
         padding: 20px;
     }
 
@@ -682,4 +790,8 @@ input{
         font-size: 2.2rem;
     }
     
+    .footer-container{
+        justify-content: left;
+        gap : 50px;
+    }
 }

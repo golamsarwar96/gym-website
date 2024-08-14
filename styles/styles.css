@@ -75,7 +75,6 @@ body{
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
 }
 
 .nav-bar h1{
